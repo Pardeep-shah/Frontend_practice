@@ -1,0 +1,78 @@
+.parent{
+    background-color: gray;
+    /* display:grid; */
+    /* grid-template-columns: repeat(3, 1fr); Creates 3 equal columns */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 60px;
+
+}
+
+.grid{
+    background-color: yellowgreen;
+    border: 2px solid black;
+    /* padding from inside  */
+    padding: 20px;
+    /* margin from outside  */
+    margin: 10px; 
+    width: 350px;
+}
+
+
+/* .parent2{
+    position: relative;
+    background-color: red;
+    height: 300px;
+    border: 3px solid green;
+    z-index: 2;
+}
+
+.child-class{
+    position: relative;
+    border: 2px solid black;
+    height: 200px;
+    width: 600px;
+    background-color: maroon;
+    z-index: 1;
+} */
+
+
+.parent2 {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 50px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+}
+
+.child-class {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+    height: 100px;
+    background-color: lightblue; /* Suitable background color */
+    z-index: 2; /* Puts it above the overlay-box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 200px;
+    height: 100px;
+    background-color: red; /* Semi-transparent red */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+}
