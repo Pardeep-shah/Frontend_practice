@@ -1,0 +1,132 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:white;
+  color: #333;
+}
+
+/* Navigation Bar Styling */
+nav {
+  background-color: #ffff;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  height: 35px;
+  margin-right: 20px;
+}
+
+nav .list-class {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav .list-class a {
+  text-decoration: none;
+  color:black;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+nav button {
+  background-color: #6532dd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #4b2851;
+}
+
+/* Main Content Styling */
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  flex-wrap: wrap;
+}
+
+main .left {
+  max-width: 500px;
+}
+nav .list-class li {
+  margin-right: 35px;
+}
+
+main .left {
+  max-width: 500px;
+}
+
+main .left h1 {
+  font-size: 48px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+main .left h1 span {
+  color: #6532dd;
+}
+
+main .left p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+main .left button {
+  background-color: #6532dd;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+main .left button:hover {
+  background-color: #4b2851;
+}
+
+main .right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  main .left {
+    margin-bottom: 30px;
+  }
+
+  main .left h1 {
+    font-size: 36px;
+  }
+
+  main .left p {
+    font-size: 16px;
+  }
+}
